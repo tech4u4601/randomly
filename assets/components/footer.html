@@ -1,0 +1,104 @@
+
+  <!-- FOOTER -->
+  <div class="container">
+    <footer class="py-3">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Randomly</h5>
+          <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Accueil</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Aléatoire</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Jeux</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">À propos</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Aléatoire</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="randomX.html">Tirage</a></li>
+            <li class="nav-item"><a class="nav-link" href="randomOrder.html">Liste</a></li>
+            <li class="nav-item"><a class="nav-link" href="randomGroups.html">Groupes</a></li>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Jeux</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Quiz</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Qui suis-je ?</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Action / Vérité</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between border-top">
+        <p>© 2026 Randomly - Application de génération aléatoire</p>
+        <ul class="list-unstyled d-flex justify-content-center">
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+          <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+        </ul>
+        <p class="float-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer>
+  </div>
+</main>
+<div class="modal fade" id="exampleModalDefault" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 " id="exampleModalLabel">Déconnexion</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body justify-content-center">
+        Vous êtes sur le point de vous déconnecter
+      </div>
+      <div class="modal-footer align-content-center">
+        <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Annuler</button>
+        <button type="button" class="btn btn-primary ">Confirmer</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  (() => {
+  'use strict'
+
+  // Tooltip and popover demos
+  document.querySelectorAll('.tooltip-demo')
+    .forEach(tooltip => {
+      new bootstrap.Tooltip(tooltip, {
+        selector: '[data-bs-toggle="tooltip"]'
+      })
+    })
+
+  document.querySelectorAll('[data-bs-toggle="popover"]')
+    .forEach(popover => {
+      new bootstrap.Popover(popover)
+    })
+
+  document.querySelectorAll('.toast')
+    .forEach(toastNode => {
+      const toast = new bootstrap.Toast(toastNode, {
+        autohide: false
+      })
+
+      toast.show()
+    })
+  })
+</script>
